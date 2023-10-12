@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Form</title>
+</head>
+<body>
+   <form action=""></form>
+      <h1>Payment Form</h1>
+      <p>Required Fileds are followedby *</p>
+      <h2>Contact Information</h2>   
+      <p>Name :*  <input type="text" name="name" required></p>
+      <fieldset> <legend> Gender*</legend>
+         <p> 
+      
+        Male <input type="radio" name="gender" id="male">
+        Female <input type="radio" name="gender" id="female">
+        Other <input type="radio" name="gender" id="other">
+    </p>  
+</fieldset>   
+
+ <p> Address:* <textarea name="address" id="address" cols="100" rows="7"></textarea></p>
+ <p>Email :* <input type="email" name="email" id="email"></p>
+ <p>Pincode :* <input type="number" name="pincode" id="pincode"></p>
+ <h2>Payment Information</h2>
+  <p> Card Type :
+     <select name="card_type" id="card_type">
+        <option value="">--Select a Card Type --</option>
+        <option value="visa">Visa</option>
+        <option value="Master Card"> Master Card</option>
+        <option value="Bkash">Bkash</option>
+     </select>
+  </p> 
+  <p>
+    card or Bkash Number :* 
+    <select name="card_Bkash_number" id="card_Bkash_number">
+        <option value="Bkash Number">Mobile Number </option>
+        <option value="Card Number">Card Number</option> 
+    </select> 
+   <p><input type="number" name="card_bkash_number" id="card_bkash_number"></p>
+   
+  </p> 
+  <p> Expiration Date <input type="date" name="exp_date" id="exp_date"> 
+ </p>  
+    <p> Bkash PIN or CVV :* 
+        <select name="cvv_pin" id="cvv_pin"> 
+            <option value="PIN">PIN</option>
+            <option value="CVV">CVV</option>
+        </select>
+    
+   <p>CVV OR PIN <input type="password" name="cvv_pin" id="cvv_pin"></p> 
+
+</p> 
+<input type="submit" value="Pay Now">
+
+</body>
+</html>
